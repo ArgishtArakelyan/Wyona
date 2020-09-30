@@ -36,7 +36,29 @@ $(document).ready(function(){
         setTimeout(function(){
             $('#exampleModalCenter6').modal('hide');
         }, 40000);
+        setTimeout(function(){
+            $('#exampleModalCenter7').modal('show');
+        }, 40000);
+        setTimeout(function(){
+            $('#exampleModalCenter7').modal('hide');
+        }, 46000);
+        setTimeout(function(){
+            $('#exampleModalCenter8').modal('show');
+        }, 46000);
+        setTimeout(function(){
+            $('#exampleModalCenter8').modal('hide');
+        }, 52000);
+        setTimeout(function(){
+            $('#exampleModalCenter9').modal('show');
+        }, 52000);
+        setTimeout(function(){
+            $('#exampleModalCenter9').modal('hide');
+        }, 58000);
+        setTimeout(function(){
+            $('#exampleModalCenter10').modal('show');
+        }, 64000);
     };
+
     if($(".teacher-category").length !== 0) {
         $(".firstTitle").click(function() {
             // $(this).parent().parent().find('.firstTitle.active').removeClass("active");
