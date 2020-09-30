@@ -2,13 +2,13 @@ $(document).ready(function(){
     if($("#exampleModalCenter1").length !== 0) {
         setTimeout(function(){
             $('#exampleModalCenter1').modal('show');
-        }, 2000);
+        }, 1000);
         setTimeout(function(){
             $('#exampleModalCenter1').modal('hide');
-        }, 8000);
+        }, 6000);
         setTimeout(function(){
             $('#exampleModalCenter2').modal('show');
-        }, 8000);
+        }, 6000);
         setTimeout(function(){
             $('#exampleModalCenter2').modal('hide');
         }, 16000);

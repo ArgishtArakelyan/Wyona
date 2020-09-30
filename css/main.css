@@ -1427,3 +1427,7 @@ footer .money-text {
     margin-top: 20px;
   }
 }
+
+
+.modal.fade .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(.4);transform: translate(0,0)scale(.4);}
+.modal.show .modal-dialog.modal-dialog-zoom {-webkit-transform: translate(0,0)scale(1);transform: translate(0,0)scale(1);}
