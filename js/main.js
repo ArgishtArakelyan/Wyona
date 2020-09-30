@@ -56,7 +56,7 @@ $(document).ready(function(){
         }, 58000);
         setTimeout(function(){
             $('#exampleModalCenter10').modal('show');
-        }, 64000);
+        }, 58000);
     };
 
     if($(".teacher-category").length !== 0) {
