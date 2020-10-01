@@ -5,58 +5,58 @@ $(document).ready(function(){
         }, 1000);
         setTimeout(function(){
             $('#exampleModalCenter1').modal('hide');
-        }, 6000);
+        }, 5000);
         setTimeout(function(){
             $('#exampleModalCenter2').modal('show');
-        }, 6000);
+        }, 5000);
         setTimeout(function(){
             $('#exampleModalCenter2').modal('hide');
-        }, 16000);
+        }, 7000);
         setTimeout(function(){
             $('#exampleModalCenter3').modal('show');
-        }, 16000);
+        }, 7000);
         setTimeout(function(){
             $('#exampleModalCenter3').modal('hide');
-        }, 22000);
+        }, 11000);
         setTimeout(function(){
             $('#exampleModalCenter4').modal('show');
-        }, 22000);
+        }, 11000);
         setTimeout(function(){
             $('#exampleModalCenter4').modal('hide');
-        }, 28000);
+        }, 13000);
         setTimeout(function(){
             $('#exampleModalCenter5').modal('show');
-        }, 28000);
+        }, 13000);
         setTimeout(function(){
             $('#exampleModalCenter5').modal('hide');
-        }, 34000);
+        }, 17000);
         setTimeout(function(){
             $('#exampleModalCenter6').modal('show');
-        }, 34000);
+        }, 17000);
         setTimeout(function(){
             $('#exampleModalCenter6').modal('hide');
-        }, 40000);
+        }, 19000);
         setTimeout(function(){
             $('#exampleModalCenter7').modal('show');
-        }, 40000);
+        }, 19000);
         setTimeout(function(){
             $('#exampleModalCenter7').modal('hide');
-        }, 46000);
+        }, 23000);
         setTimeout(function(){
             $('#exampleModalCenter8').modal('show');
-        }, 46000);
+        }, 23000);
         setTimeout(function(){
             $('#exampleModalCenter8').modal('hide');
-        }, 52000);
+        }, 25000);
         setTimeout(function(){
             $('#exampleModalCenter9').modal('show');
-        }, 52000);
+        }, 25000);
         setTimeout(function(){
             $('#exampleModalCenter9').modal('hide');
-        }, 58000);
+        }, 29000);
         setTimeout(function(){
             $('#exampleModalCenter10').modal('show');
-        }, 58000);
+        }, 29000);
     };
 
     if($(".teacher-category").length !== 0) {
