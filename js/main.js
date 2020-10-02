@@ -1,6 +1,7 @@
 $(document).ready(function(){
     if($("#exampleModalCenter1").length !== 0) {
         setTimeout(function(){
+            // $('.hide-style .modal').addClass('hide-style')
             $('#exampleModalCenter1').modal('show');
         }, 1000);
         setTimeout(function(){
