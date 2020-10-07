@@ -75,3 +75,46 @@ $(document).ready(function(){
         });
     };
 });
+
+$('.heart.icon').on('click', function() {
+    if ($(this).find('i').hasClass("far") ) {
+        $(this).find('i').removeClass('far').addClass('fas').addClass('color');
+    }else {
+        $(this).find('i').addClass('far').removeClass('fas').removeClass('color')
+    }
+});
+
+$('.carousel-content .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        767:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+})
+
+
+$('.credentialed-teacher').owlCarousel({
+    loop:true,
+    margin:32,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        767:{
+            items:3
+        },
+        1200:{
+            items:5
+        }
+    }
+})

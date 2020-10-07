@@ -1,0 +1,494 @@
+@media (max-width: 1600px) {
+  footer {
+    padding: 40px 120px;
+  }
+  .third-block-item {
+    width: 350px;
+    padding: 56px 15px;
+  }
+  .third-text-2 {
+    width: 100%;
+  }
+  .third-text-1 {
+    font-size: 23px;
+  }
+  .navbar {
+    padding: 8px 120px;
+  }
+  .about {
+    padding: 100px 120px;
+  }
+  .about-mister {
+    padding: 80px 120px 56px;
+  }
+  .carousel-content {
+    padding: 0 120px;
+  }
+  .teacher-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  footer {
+    padding: 40px 30px;
+  }
+  .about {
+    padding: 100px 30px;
+  }
+  .carousel-content {
+    padding: 0 30px;
+  }
+  .fourth-block {
+    padding: 0 80px;
+  }
+  .fourth-block-item {
+    width: 50%;
+    text-align: center;
+  }
+  .second-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .second-item {
+    margin-bottom: 40px;
+  }
+  .navbar {
+    padding: 8px 30px;
+  }
+  .about-mister {
+    padding: 80px 30px 56px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-logo {
+    width: 80px;
+  }
+  .million-text {
+    font-size: 35px;
+  }
+  .fourth-block-item img {
+    margin-right: 14px;
+  }
+  .million-text-2 {
+    font-size: 17px;
+  }
+  .third-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .third-block-item {
+    margin-bottom: 30px;
+  }
+  .third-text-2 {
+    height: 42px;
+    margin: 0 auto 40px;
+    width: 80%;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+  .header-right {
+    font-size: 14px;
+  }
+  .nav-login {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .navbar-brand {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .inner-wrap .img {
+    margin-left: 0px;
+  }
+  .about {
+    padding: 64px 30px;
+  }
+  .about .inner-wrap .text-img {
+    display: block;
+  }
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+  }
+  footer > div {
+    width: 200px;
+  }
+  .footer-subscribe {
+    width: 300px;
+  }
+  .teacher-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teacher-item-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .text-5 {
+    margin-right: 0;
+  }
+  .money-item-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
+  .money-present {
+    margin-top: 20px;
+  }
+  .block-teacher {
+    margin-right: 0;
+  }
+  .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .details-table {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .money-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text-6 {
+    margin-bottom: 20px;
+  }
+  .login-block {
+    width: 100%;
+  }
+  .login-teacher {
+    width: 50%;
+  }
+  .login-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .login-title {
+    width: 100%;
+  }
+  .login-btns {
+    width: 100%;
+  }
+  .login-member {
+    width: 50%;
+  }
+  .fourth-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .million-text-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fourth-block-item {
+    height: auto;
+  }
+  .million-text-block {
+    height: auto;
+    margin-top: 20px;
+  }
+  .fourth-block-item img {
+    margin-right: 0;
+    margin-top: 23px;
+  }
+  .fourth-block {
+    height: auto;
+    padding: 65px 0;
+  }
+  .see-more-btn {
+    margin: 20px auto;
+  }
+  .navbar {
+    height: auto;
+  }
+  .navbar-collapse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-link {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .header-right {
+    font-size: 16px;
+  }
+  .header-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-login {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .details {
+    overflow-x: auto;
+    max-width: 700px;
+  }
+  .login-block {
+    height: 50px;
+  }
+  .login-btns {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login-teacher,
+  .login-member {
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 20px;
+  }
+  .login-block input {
+    font-size: 14px;
+  }
+  .login-check label {
+    font-size: 15px;
+  }
+  .login-check {
+    margin-bottom: 0;
+  }
+  .forgot-password {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .login-btn {
+    height: 50px;
+  }
+  .teachers-block .second-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  .mission-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer > div {
+    width: 100%;
+  }
+  .footer-subscribe {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer > div {
+    text-align: center;
+    width: 100%;
+  }
+  .text-6 {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .money-item-right {
+    width: 100%;
+  }
+  .table-money-text {
+    font-size: 12px;
+  }
+  .table-text {
+    font-size: 14px;
+  }
+  .details-table {
+    font-size: 11px;
+  }
+  .money-present {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .money-amount {
+    font-size: 25px;
+  }
+  .text-4 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .money-text {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .money-block {
+    text-align: center;
+    margin-top: 35px;
+  }
+  .teacher-item-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text-7 {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .login-title {
+    font-size: 18px;
+  }
+  .login-btn {
+    width: 100%;
+  }
+  .login-btns {
+    margin-bottom: 30px;
+  }
+  .teachers-block .second-item {
+    margin-right: 0;
+  }
+  .teachers-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .teachers-left {
+    width: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .fourth-block-item {
+    width: 90%;
+  }
+  .million-text {
+    font-size: 23px;
+  }
+  .fourth-block-item img {
+    width: 63px;
+    margin-bottom: 17px;
+  }
+  .million-text-2 {
+    font-size: 13px;
+  }
+  .lead-more-btn {
+    margin: 0 auto 40px;
+  }
+  .third-text-3 {
+    font-size: 13px;
+  }
+  .subscribe-btn {
+    font-size: 13px;
+    margin: 30px auto 0;
+  }
+  .third-block-item {
+    width: 100%;
+    padding: 40px 15px 20px;
+    height: 355px;
+  }
+  .second-text {
+    text-align: center;
+  }
+  .about-mister-title {
+    font-size: 21px;
+    margin-bottom: 50px;
+  }
+  .skip-btn {
+    right: 0;
+    margin: auto;
+    left: 0;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
