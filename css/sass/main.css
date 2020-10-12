@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, p, h1, h2, h3, h4, ul {
   margin: 0;
   padding: 0;
@@ -26,6 +27,41 @@ button:active, button:focus {
 li {
   padding: 0;
   list-style-type: none;
+}
+
+input[type='checkbox'] {
+  z-index: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #535353;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+input[type='checkbox']:checked {
+  background: #75141E;
+  border: 0;
+}
+
+input[type='checkbox']:checked::before {
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  margin-top: 0px;
+  content: '✔';
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
 }
 
 main {
@@ -250,15 +286,15 @@ main {
 }
 
 .about-mister {
-  padding: 80px 200px 56px;
+  padding: 80px 200px 24px;
 }
 
 .about-mister-title {
-  color: #535353;
-  font-size: 24px;
   margin-bottom: 56px;
   text-align: center;
-  font-family: "Poppins-SemiBold";
+  font-size: 48px;
+  color: #3A3A3A;
+  font-family: "CarterOne-Regular";
 }
 
 .mission-title {
@@ -441,26 +477,43 @@ main {
 }
 
 .third-block-item {
-  width: 430px;
-  height: 420px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 15px #00000017;
           box-shadow: 0px 0px 15px #00000017;
   padding: 56px 32px;
+  margin-right: 32px;
+}
+
+.third-block-item.active {
+  background: #75141E;
+}
+
+.third-block-item.active * {
+  color: #fff;
+}
+
+.third-block-item.active .subscribe-btn {
+  background: #FFFFFF;
+  color: #75141E !important;
+}
+
+.third-block-item:last-child {
+  margin-right: 0;
 }
 
 .third-text-1 {
   color: #75141E;
   font-size: 32px;
-  font-family: "Poppins-SemiBold";
+  font-family: "Anton-Regular";
   margin-bottom: 16px;
-  text-transform: uppercase;
   text-align: center;
 }
 
 .third-text-2 {
-  width: 368px;
   height: 53px;
   background: #FFBF0E;
   margin-bottom: 32px;
@@ -475,11 +528,19 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  font-family: "Poppins-Light";
+  font-family: "Poppins-Bold";
   color: white !important;
 }
 
 .third-text-3 {
+  color: #535353;
+  font-size: 16px;
+  font-family: "Poppins-Bold";
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.third-text-4 {
   color: #535353;
   font-size: 16px;
   font-family: "Poppins-Light";
@@ -497,7 +558,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
+  width: 180px;
   height: 47px;
   background: #75141E;
   border-radius: 28px;
@@ -506,7 +567,7 @@ main {
   font-family: "Poppins-Medium";
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  margin: 60px auto 0;
+  margin: 24px auto 0;
 }
 
 .subscribe-btn:hover {
@@ -567,6 +628,11 @@ main {
   margin-top: 20px;
 }
 
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: #3A3A3A;
+}
+
 .ask-teacher {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,6 +668,24 @@ main {
 .carousel-content {
   padding: 0 290px;
   margin-bottom: 80px;
+}
+
+.carousel-content .owl-nav {
+  display: block;
+}
+
+.carousel-content .owl-nav button {
+  font-size: 36px !important;
+  position: absolute;
+  top: 76px;
+}
+
+.carousel-content .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.carousel-content .owl-nav button.owl-next {
+  right: 0;
 }
 
 .carousel-content .item {
@@ -823,9 +907,9 @@ main {
 
 .login-title {
   margin-top: 80px;
-  color: #535353;
-  font-size: 24px;
-  font-family: "Poppins-SemiBold";
+  font-size: 32px;
+  color: #3A3A3A;
+  font-family: "CarterOne-Regular";
   margin-bottom: 56px;
   text-align: center;
 }
@@ -914,12 +998,11 @@ main {
 
 .login-block {
   width: 664px;
-  height: 61px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 0px 4px #0000001F;
           box-shadow: 0px 0px 4px #0000001F;
+  overflow: hidden;
   border-radius: 31px;
-  padding-left: 25px;
   color: #E6E6E6;
   margin-bottom: 32px;
   display: -webkit-box;
@@ -936,15 +1019,71 @@ main {
   margin-bottom: 200px;
 }
 
-.login-block input {
-  margin-left: 20px;
+.login-block input, .login-block select {
+  width: 100%;
+  padding: 12px 18px;
   color: #C5C5C5;
   font-family: "Poppins-Light";
   font-size: 18px;
+  border: 0;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.login-block {
+  position: relative;
 }
 
 .login-block i {
-  font-size: 20px;
+  position: absolute;
+  font-size: 14px;
+  color: #C5C5C5;
+  right: 16px;
+  top: calc(50% - 6px);
+}
+
+.price-info {
+  padding-left: 10px;
+}
+
+.price-info a {
+  color: #75141E;
+  font-size: 16px;
+  font-family: "CarterOne-Regular";
+}
+
+.price-info a i {
+  font-size: 14px;
+}
+
+.price-info h1 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-family: "Anton-Regular";
+  font-size: 32px;
+  color: #75141E;
+}
+
+.price-info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #727272;
+  font-family: "Anton-Regular";
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.price-info .price.total {
+  padding-top: 24px;
+  border-top: 1px solid #E6E6E6;
+  color: #75141E;
+}
+
+.price-info .price p {
+  min-width: 240px;
 }
 
 .login-block input::-webkit-input-placeholder {
@@ -975,10 +1114,46 @@ main {
   margin-bottom: 16px;
 }
 
+.block-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.block-wrap .login-block {
+  margin-bottom: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 32px;
+}
+
+.block-wrap .login-block:last-child {
+  margin-right: 0;
+}
+
+.block-wrap .add-atudent {
+  font-size: 16px;
+  margin-right: 32px;
+  color: #727272;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .login-check label {
-  color: #545454 !important;
+  color: #535353;
   font-family: "Poppins-Light";
-  font-size: 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-check label a {
+  color: #75141E;
+  font-weight: bold;
 }
 
 .forgot-password {
@@ -1009,6 +1184,10 @@ main {
   color: #fff !important;
   font-size: 18px;
   font-family: "Poppins-Light";
+}
+
+.register-btn {
+  margin: 32px 0 0;
 }
 
 .block-teacher {
@@ -1199,13 +1378,20 @@ main {
 }
 
 .details-table tr {
-  border-bottom: 0.5px solid #C6C6C6;
   font-weight: unset !important;
 }
 
-.details-table td {
+.table td, .table th {
   border-right: 0.5px solid #C6C6C6;
-  padding: 24px;
+  padding: 16px 20px;
+}
+
+.table td:last-child, .table th:last-child {
+  color: #E90000;
+}
+
+.table td.border-t0, .table th.border-t0 {
+  border-top: 0;
 }
 
 .money-item-right {
@@ -1213,9 +1399,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: calc(100% - 300px);
 }
 
@@ -1415,12 +1601,33 @@ footer .money-text {
   margin-left: 0;
 }
 
-.inner-page .left .img {
+.inner-page .left .left-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 316px;
           flex: 0 0 316px;
-  height: 316px;
   margin-right: 32px;
+}
+
+.inner-page .left .left-img label {
+  margin-top: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #727272;
+}
+
+.inner-page .left .left-img label input {
+  display: none;
+}
+
+.inner-page .left .right-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.inner-page .left .img {
+  width: 100%;
+  height: 316px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1428,15 +1635,15 @@ footer .money-text {
 
 .inner-page .left .price span {
   color: #75141E;
-  font-weight: bold;
   font-size: 40px;
+  font-family: "Anton-Regular";
 }
 
 .inner-page .left .price .btn {
   margin-left: 24px;
   background: #75141E;
   color: #FFFFFF;
-  padding: 12px 26px;
+  padding: 12px 50px;
   font-size: 16px;
   border-radius: 28px;
 }
@@ -1475,9 +1682,19 @@ footer .money-text {
           flex: 0.5;
 }
 
+.inner-page .right .video {
+  margin-bottom: 24px;
+}
+
+.inner-page .right iframe {
+  width: 100%;
+  height: 230px;
+}
+
 .inner-page .right > h1 {
   color: #535353;
   font-size: 32px;
+  font-family: "CarterOne-Regular";
 }
 
 .inner-page .right .second-block {
@@ -1608,7 +1825,7 @@ footer .money-text {
   margin: 0;
 }
 
-.about-mister .covered .item-wrap .item .img {
+.about-mister .covered .item-wrap .item img {
   width: 100%;
 }
 
@@ -1637,10 +1854,105 @@ footer .money-text {
 .credentialed-teacher {
   max-width: 1200px;
   margin: 0 auto 24px;
+  padding: 0 48px;
+  position: relative;
 }
 
 .credentialed-teacher .second-item {
   width: 100%;
+}
+
+.credentialed-teacher .owl-nav {
+  display: block;
+}
+
+.credentialed-teacher .owl-nav button {
+  font-size: 36px !important;
+  position: absolute;
+  top: 76px;
+}
+
+.credentialed-teacher .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.credentialed-teacher .owl-nav button.owl-next {
+  right: 0;
+}
+
+.faq-home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 200px 24px;
+}
+
+.faq-home-page .left {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+}
+
+.faq-home-page .left img {
+  width: 100%;
+}
+
+.faq-home-page .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 32px;
+}
+
+.faq-home-page .right .faq-list li {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 24px 32px;
+  -webkit-box-shadow: 0px 0px 6px #00000012;
+          box-shadow: 0px 0px 6px #00000012;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.faq-home-page .right .faq-list li .question {
+  font-size: 16px;
+  color: #75141E;
+  position: relative;
+  font-family: "Poppins-SemiBold";
+}
+
+.faq-home-page .right .faq-list li .question i {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  font-size: 16px;
+}
+
+.faq-home-page .right .faq-list li .question span {
+  padding-right: 32px;
+  display: block;
+}
+
+.faq-home-page .right .faq-list li .answer {
+  display: none;
+  margin-top: 16px;
+}
+
+.faq-home-page .right .faq-list li .answer p {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.faq-home-page .right .faq-list li .answer p:last-child {
+  margin-bottom: 0;
+}
+
+.choose-plan.register-page {
+  padding: 0px 200px;
 }
 
 .modal.fade .modal-dialog.modal-dialog-zoom {

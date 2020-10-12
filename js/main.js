@@ -118,3 +118,16 @@ $('.credentialed-teacher').owlCarousel({
         }
     }
 })
+
+$(document).on('click', '.faq-list li', function() {
+    $(this).find('.answer').toggle();
+
+    if($(this).find('.answer').css('display') == 'block'){
+        $(this).css("background", "#FFCC40");
+        $(this).find('.question i').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+
+    }else{
+        $(this).css("background", "transparent");
+        $(this).find('.question i').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+    }
+});
